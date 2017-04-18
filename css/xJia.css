@@ -1,0 +1,492 @@
+@charset "utf-8";
+/**{
+	touch-action: none; 
+}*/
+
+.flex {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  padding: 0 6px;
+  box-sizing: border-box;
+  background: #F7F7F7;
+}
+header {
+  box-sizing: border-box;
+  padding: .1rem 0;
+}
+
+#search-area{
+	background: #fff;
+	display: flex;
+	justify-content: space-around; 
+	align-items: center;
+	position: absolute;
+	top: 0px;
+	left: 0; 
+	border-radius: 5px;
+	width: 100%; 
+	transform: scale(0); 
+	z-index: 99;
+	transition: all .5s;
+	transform-origin: left bottom;
+}
+
+#search-area>input{
+	width: 70%;
+	margin: 0;
+}
+
+#search-area>span{
+	color: #01C26F;
+}
+
+#search-area .closeSearch{
+	font-size: .8rem;
+}
+
+#nav {
+  width: 100%;
+  padding: 0 6px;
+  background-color: #fff;
+}
+#nav > ul {
+  width: 100%;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#nav > ul > li {
+  width: 20%;
+  height: 3rem;
+  margin: .5rem 0;
+}
+#nav > ul > li p {
+  text-align: center;
+  line-height: 1.5rem;
+  font-size: .5rem;
+}
+#nav .nav-item {
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  background: #aaa;
+  margin: 0 auto;
+  font-size: .75rem;
+  text-align: center;
+  line-height: 1.8rem;
+  color: #fff;
+  font-weight: 300;
+}
+.CourseContainer {
+  overflow: hidden;
+  background: #fff;
+  margin-top: .4rem;
+}
+.CourseContainer > h2 {
+  position: relative;
+  font-size: .7rem;
+  color: #01c26f;
+  line-height: 1rem;
+}
+.CourseContainer .goldCourse {
+  width: 100%;
+  padding: .1rem 0;
+  margin: 0;
+}
+.CourseContainer .goldCourse > ul {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: .2rem 0;
+  padding-right: .1rem;
+  box-sizing: border-box;
+  border-bottom: 0px !important;
+}
+.CourseContainer .goldCourse > ul > li {
+  margin: .3rem 0;
+  width: 48%;
+}
+.CourseContainer .goldCourse > ul > li > a {
+  padding: 0;
+}
+.CourseContainer .goldCourse > ul > li img {
+  width: 90% !important;
+  border-radius: .2rem;
+}
+.CourseContainer .goldCourse > ul > li div {
+  width: 100%;
+  color: #666 !important;
+  font-size: .6rem !important;
+  height: 1rem !important;
+  line-height: 1rem !important;
+}
+.route {
+  width: 100%;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.route > li {
+  width: 48%;
+  height: 2rem;
+  margin-top: .3rem;
+  line-height: 2rem;
+}
+.route > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: #eee;
+  border-radius: .2rem;
+  color: #666;
+  font-size: .6rem;
+}
+.forum > ul {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  box-sizing: border-box;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 6px;
+  align-content: space-around;
+}
+.forum > ul > li {
+  width: 100%;
+  padding: .4rem 0;
+  border-bottom: 1px dashed #ddd;
+}
+.forum > ul > li > a {
+  color: #666;
+  font-size: .7rem;
+  display: inline-block;
+  width: 95%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.forum > ul > li > a + span {
+  font-size: .7rem;
+}
+#page2 .page2-nav {
+  background: #fff;
+  padding: .5rem 0;
+  box-shadow: none;
+}
+#page2 .page2-nav > a {
+  font-size: .75rem;
+  padding: 0 .3rem;
+  color: #333;
+}
+#page2 .page2-nav > a:first-of-type {
+  color: orange;
+}
+#page2 .totalCourse {
+  width: 100%;
+  padding: 1rem 6px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+#page2 .totalCourse .totalCourse-item {
+  width: 100%;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  box-sizing: border-box;
+  justify-content: space-around;
+}
+#page2 .totalCourse .totalCourse-item > img {
+  height: 4.5rem;
+  border-radius: .5rem;
+  margin-right: .5rem;
+}
+#page2 .totalCourse .totalCourse-item > div {
+  width: 50%;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+}
+#page2 .totalCourse .totalCourse-item > div > h2 {
+  font-size: .7rem;
+  padding-bottom: .5rem;
+  padding-right: .1rem;
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#page2 .totalCourse .totalCourse-item > div > p {
+  display: inline-block;
+  height: 2rem;
+  overflow: hidden;
+  font-size: .6rem;
+  line-height: 1rem;
+}
+#page3 {
+  width: 100%;
+}
+#page3 .page3-content {
+  width: 100%;
+  overflow: hidden;
+}
+#page3 .page3-content .mui-slider-item {
+  width: 100%;
+  overflow: hidden;
+}
+#page3 .page3-content .mui-slider-item img {
+  width: 100%;
+}
+#page3 .page3-content .mui-slider-item p {
+  font-size: .6rem;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  box-sizing: border-box;
+  align-items: center;
+}
+#page3 .page3-content .mui-slider-item p > span {
+  margin-right: .1rem;
+  font-size: .6rem;
+}
+#page3 .courseListNav {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  box-sizing: border-box;
+  padding: .5rem 0;
+  justify-content: center;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+#page3 .courseListNav > li {
+  margin-right: 1rem;
+  font-size: .7rem;
+}
+#page3 .courseListNav > li > a {
+  color: #333;
+}
+#page3 .courseListNav > li:nth-of-type(1) > a {
+  color: orange;
+}
+#page3 .mui-content {
+  padding-top: 0;
+}
+#page3 .mui-content h3 {
+  font-size: .7rem;
+  line-height: 2rem;
+  padding: 0 6px;
+  color: #333;
+}
+#page3 .mui-content .baseOutline {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  align-content: space-around;
+  background-color: #fff;
+}
+#page3 .mui-content .baseOutline > div {
+  width: 100%;
+  align-items: flex-start;
+}
+#page3 .mui-content .baseOutline .teacher {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  box-sizing: border-box;
+  padding: .5rem;
+  align-items: center;
+}
+#page3 .mui-content .baseOutline .teacher > img {
+  width: 20%;
+  border-radius: 50%;
+  margin-right: .5rem;
+}
+#page3 .mui-content .baseOutline .teacher > div {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  box-sizing: border-box;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#page3 .mui-content .baseOutline .teacher > div > h2 {
+  width: 100%;
+  font-size: .7rem;
+  padding-bottom: .5rem;
+  padding-right: .1rem;
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#page3 .mui-content .baseOutline .teacher > div > p {
+  display: inline-block;
+  overflow: hidden;
+  font-size: .6rem;
+  line-height: 1rem;
+}
+#page3 .mui-content .baseOutline .outline > p {
+  font-size: .6rem;
+  padding: 0 6px;
+  line-height: .7rem;
+}
+#page3 .mui-content .reco {
+  width: 100%;
+  background-color: #fff;
+}
+#page3 .mui-content .reco .recoList {
+  width: 100%;
+}
+#page3 .mui-content .reco .recoList > li {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  box-sizing: border-box;
+  align-items: flex-start;
+  padding: 1rem 6px;
+  border-bottom: 1px solid #eee;
+}
+#page3 .mui-content .reco .recoList > li > a {
+  width: 45%;
+}
+#page3 .mui-content .reco .recoList > li > a > img {
+  width: 100%;
+  border-radius: .3rem;
+  margin-right: .2rem;
+}
+#page3 .mui-content .reco .recoList > li > div {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#page3 .mui-content .reco .recoList > li > div > h2 {
+  width: 100%;
+  font-size: .7rem;
+  padding: .5rem 0;
+  padding-right: .1rem;
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+#page3 .mui-content .reco .recoList > li > div > h2 > a {
+  color: #333;
+}
+#page3 .mui-content .reco .recoList > li > div > p {
+  font-size: .6rem;
+  line-height: .7rem;
+}
+#page3 .mui-content #courseList {
+  width: 100%;
+  background-color: #fff;
+}
+#page3 .mui-content #courseList .dire {
+  width: 100%;
+}
+#page3 .mui-content #courseList .dire > li {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 6px;
+  font-size: .7rem;
+  color: #ACACB4;
+  border-bottom: 1px solid #eee;
+}
+#page3 .mui-content #courseList .dire > li > a {
+  flex: 1;
+  color: #ACACB4;
+}
+#page4 {
+  width: 100%;
+  background-color: #fff;
+}
+#page4 .profile {
+  width: 100%;
+}
+#page4 .profile > li {
+  width: 100%;
+  /*display: flex;*/
+  /*display: -ms-flexbox;*/
+  /*display: -webkit-flex;*/
+  /*box-sizing: border-box;*/
+  height: 4rem;
+  line-height: 4rem;
+  /*align-items: center;*/
+  border-bottom: 1px dashed #eee;
+  padding: 0 6px;
+}
+#page4 .profile > li > span {
+  font-size: 1rem;
+  color: #333;
+}
+#page4 .profile > li>a{
+	display: inline-block;
+	height: inherit;
+	line-height: inherit;
+	font-size: 1rem;
+	color: #333;
+}
+
+
+footer {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  width: 100%;
+}
+footer .footer-top {
+  width: 100%;
+  padding: 1rem .5rem;
+  border-bottom: 1px solid #eee;
+}
+footer .footer-top > h2 {
+  font-size: .9rem;
+  color: #333;
+}
+footer .footer-top > a {
+  margin: .3rem auto;
+  font-size: .7rem;
+  display: inline-block;
+  width: 100%;
+}
+footer .footer-top > a > span {
+  font-size: 1rem !important;
+  padding-right: .2rem;
+}
+footer .footer-copyright {
+  width: 100%;
+}
+footer .footer-copyright > p {
+  font-size: .5rem;
+  line-height: .8rem;
+}

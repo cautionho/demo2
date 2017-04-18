@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<!--<link href="css/mui.min.css" rel="stylesheet" />-->
+		<link rel="stylesheet" type="text/css" href="css/mui.css" />
+
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+
+		<link rel="stylesheet" type="text/css" href="css/xJia.css" />
+		<script src="js/jquery2.2.2.min.js"></script>
+		<script src="js/header.js" defer></script>
+		<script src="js/uti.js"></script>
+
+	</head>
+ 
+	<body>
+
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title"><img src="images/logo2.png" height="40"/></h1>
+			<!--<a href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>-->
+			<!--<span class="mui-icon mui-icon-contact mui-pull-right" id="profile" style="color: #01c26f;"></span>-->
+			<a href="#page1" id="returnHome" class="mui-control-item mui-icon mui-icon-home mui-pull-left" style="margin-right: .1rem; color: #01C26F;"></a>
+			<a href="#page4" id="goProfile" class="mui-control-item mui-icon mui-icon-contact mui-pull-left" style="color: #01c26f;"></a>
+
+			<!--<div class="mui-segmented-control mui-pull-right" style="border: 0;">-->
+			<a href="#page2" id="all" class="mui-control-item mui-icon mui-icon-bars mui-pull-right" style="color: #01C26F;"></a>
+			<a class="mui-icon mui-icon-search mui-pull-right" id="search" style="color: #01C26F; margin-right: .2rem;"></a>
+			<div id="search-area">
+				<input type="text" class="mui-input-clear"/>
+				<span class="mui-icon mui-icon-search"></span>
+				<span class="closeSearch">取消</span>
+			</div>
+
+			<!--</div>-->
+		</header>
+		
+		<!--<footer class="mui-bar-footer mui-active">
+			<div class="footer-top">
+				<h2 class="mui-popup-title">400-862-8862</h2>
+				<a href="javascript:void(0)" class="mui-btn mui-btn-success"><span class="mui-icon mui-icon-phone"></span>联系我们</a>
+				<a href="javascript:void(0)" class="mui-btn mui-btn-white"><span class="mui-icon mui-icon-download"></span>下载APP</a>
+			</div>
+			<div class="footer-copyright">
+				<p class="mui-popup-title">© 2012-2017 www.maiziedu.com</p>
+				<p class="mui-popup-title">蜀ICP备13014270号-4 Version 5.0.0 release20160127</p>
+			</div>
+		</footer>-->
+
+		<script type="text/javascript" charset="utf-8">
+			mui.init({
+				swipeBack: true,
+
+				subpages: [{
+					url: 'xJia.html',
+					id: 'windowShow',
+					styles: {
+						top: '45px', //mui标题栏默认高度为45px；
+						bottom: '0px' //默认为0px，可不定义；
+					}
+				}]
+
+			});
+
+			
+		</script>
+
+	</body>
+
+</html>
